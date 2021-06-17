@@ -4,19 +4,19 @@
 const gatti=[
     {
         nome:"pamela",
-        colore:"",
+        colore:"#FFFF00",
         eta:1.5,
         gender:"female"
     },
     {
         nome:"franco",
-        colore:"",
+        colore:"#008000",
         eta:1.5,
         gender:"male"
     },
     {
         nome:"yumi",
-        colore:"",
+        colore:"#0000FF",
         eta:1.5,
         gender:"female"
     },
@@ -28,15 +28,20 @@ const gatti=[
     },
     {
         nome:"jessy",
-        colore:"",
+        colore:"#800000",
         eta:1.5,
         gender:"female"
     },
     {
         nome:"linobanfi",
-        colore:"",
+        colore:"#008000",
         eta:1.5,
         gender:"male"
     }
 ];
 
+gatti.forEach((element)=> {
+    document.getElementById("gatti").innerHTML +=`
+    ${element.nome}  <i class="fas fa-cat" style="color:${element.colore}"></i>,  
+    `
+});
